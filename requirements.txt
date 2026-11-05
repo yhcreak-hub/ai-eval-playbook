@@ -1,0 +1,15 @@
+# AI 评测依赖
+# 注意：ragas 0.4.x 与 langchain 1.x 不兼容（ChatVertexAI 模块被移除），必须锁 <1
+ragas>=0.4,<0.5
+langchain<1
+langchain-community<0.4
+langchain-openai<1
+langsmith>=0.14
+openai>=1.0
+pandas
+python-dotenv
+
+# ragas 指标的可选依赖（不装会在运行时才报错）
+rapidfuzz
+nltk
+sacrebleu
