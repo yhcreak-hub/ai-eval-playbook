@@ -94,7 +94,7 @@ def ensure_dataset() -> None:
 # v1 / v2 直接读 promptfoo 的 prompt 文件，确保两处测的是同一段文本
 PROMPT_V0 = """你是订单客服，请回答用户的问题。
 
-用户问题：{question}"""
+用户问题：{{question}}"""
 PROMPT_V1 = (PF_DIR / "prompts.txt").read_text(encoding="utf-8")
 PROMPT_V2 = (PF_DIR / "prompts-v2.txt").read_text(encoding="utf-8")
 
